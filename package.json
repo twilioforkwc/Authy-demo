@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@code.hq.twilio.com:jstaples/authy-demo.git"
+    "url": "git@github.com:twilioforkwc/Authy-demo.git"
   },
   "keywords": [
     "Authy",
@@ -16,7 +16,7 @@
     "2FA",
     "NodeJS"
   ],
-  "author": "Josh Staples",
+  "author": "KDDI Web Communications Inc.",
   "license": "ISC",
   "dependencies": {
     "authy-client": "^1.0.7",
