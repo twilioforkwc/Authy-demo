@@ -59,5 +59,8 @@ typings/
 # dotenv environment variables file
 .env
 
+# mongodb startup shell
+mongod.sh
 
-
+# .gitignore
+.gitignore
