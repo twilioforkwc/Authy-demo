@@ -273,11 +273,11 @@ exports.createonetouch = function (req, res) {
                 visible: {
                     "Authy ID": user.authyId,
                     "Username": user.username,
-                    "Location": 'San Francisco, CA',
-                    "Reason": 'Demo by Authy'
+                    "Location": '日本',
+                    "Reason": 'Authyデモ'
                 }
             },
-            message: 'Login requested for an Authy Demo account.'
+            message: 'Authyデモからログイン認証の確認が届きました'
         };
 
         authy.createApprovalRequest(request, {ttl: 120}, function (oneTouchErr, oneTouchRes) {
@@ -399,7 +399,7 @@ exports.verifyPhoneToken = function (req, res) {
     var country_code = req.body.country_code;
     var phone_number = req.body.phone_number;
     var token = req.body.token;
-    
+
     if (phone_number && country_code && token) {
         phoneReg.verifyPhoneToken(phone_number, country_code, token, function (err, response) {
             if (err) {
