@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <title>Register User - Super Simple Authy Demo</title>
@@ -31,7 +31,7 @@
         <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Authy Demo Registration</h3>
+                    <h3 class="panel-title">Authy デモ ユーザ登録</h3>
                 </div>
                 <div class="panel-body">
                     <form role="form">
@@ -41,7 +41,7 @@
                                     <input type="text" name="username" id="register_username"
                                            class="form-control input-sm"
                                            ng-model="setup.username"
-                                           placeholder="User Name">
+                                           placeholder="ユーザ名">
                                 </div>
                             </div>
                         </div>
@@ -49,7 +49,7 @@
                         <div class="form-group">
                             <input type="email" name="email" id="email" class="form-control input-sm"
                                    ng-model="setup.email"
-                                   placeholder="Email Address">
+                                   placeholder="メールアドレス">
                         </div>
 
                         <div class="row">
@@ -58,7 +58,7 @@
                                     <input type="text" name="country_code" id="country_code"
                                            ng-model="setup.country_code"
                                            class="form-control input-sm"
-                                           placeholder="Country Code">
+                                           placeholder="国コード">
                                 </div>
                             </div>
                             <div class="col-xs-6 col-sm-6 col-md-6">
@@ -66,7 +66,7 @@
                                     <input type="text" name="phone_number" id="phone_number"
                                            ng-model="setup.phone_number"
                                            class="form-control input-sm"
-                                           placeholder="Phone Number">
+                                           placeholder="電話番号">
                                 </div>
                             </div>
                         </div>
@@ -77,20 +77,20 @@
                                     <input type="password" name="password" id="register1_password"
                                            ng-model="password1"
                                            class="form-control input-sm"
-                                           placeholder="Password">
+                                           placeholder="パスワード">
                                 </div>
                             </div>
                             <div class="col-xs-6 col-sm-6 col-md-6">
                                 <div class="form-group">
                                     <input type="password" name="password_confirmation" id="password_confirmation"
                                            ng-model="password2"
-                                           class="form-control input-sm" placeholder="Confirm Password">
+                                           class="form-control input-sm" placeholder="パスワード（確認）">
                                 </div>
                             </div>
                         </div>
 
-                        <input type="submit" value="Register" ng-click="register()" class="btn btn-info btn-block">
-                        <small style="float: right;"><a href="/login">Login</a></small>
+                        <input type="submit" value="登録する" ng-click="register()" class="btn btn-info btn-block">
+                        <small style="float: right;">ログインページは<a href="/login">こちら</a></small>
                     </form>
                 </div>
             </div>
