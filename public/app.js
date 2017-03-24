@@ -149,9 +149,20 @@ app.controller('PhoneVerificationController', function ($scope, $http, $window, 
     $scope.setup = {
         via: "sms"
     };
-    
+
     $scope.view = {
         start: true
+    };
+
+    $scope.logout = function () {
+        $http.get('/api/logout')
+            .success(function (data, status, headers, config) {
+                console.log("Logout Response: ", data);
+                $window.location.href = $window.location.origin + "/verification";
+            })
+            .error(function (data, status, headers, config) {
+                console.error("Logout Error: ", data);
+            });
     };
 
     /**
@@ -183,4 +194,3 @@ app.controller('PhoneVerificationController', function ($scope, $http, $window, 
             });
     };
 });
-
